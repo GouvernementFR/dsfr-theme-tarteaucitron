@@ -102,7 +102,9 @@ tarteaucitron.lang = {
 
 Dans le back-office de tarteaucitron, vous avez accès aux chaînes de caractères directement dans l'interface.
 Dans l'onglet "Mes Sites", cliquer sur le lien "Modifier le texte" dans la section "Configuration" du tableau. 
-![Image](../blob/main/img/accueil.png?raw=true)
+
+![Image](../main/img/accueil.png?raw=true)
 
 Choisisser ensuite la langue concernée, par exemple "Français (fr)" puis metter le texte avec ou sans balises au niveau de la chaîne de caractères que vous souhaitez modifier, dans le champs "Description".
-![Image](../blob/main/img/configuration.png?raw=true)
+
+![Image](../main/img/configuration.png?raw=true)

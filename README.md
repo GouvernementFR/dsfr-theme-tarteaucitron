@@ -105,6 +105,6 @@ Dans l'onglet "Mes Sites", cliquer sur le lien "Modifier le texte" dans la secti
 
 ![Image](../main/img/accueil.png?raw=true)
 
-Choisisser ensuite la langue concernée, par exemple "Français (fr)" puis metter le texte avec ou sans balises au niveau de la chaîne de caractères que vous souhaitez modifier, dans le champs "Description".
+Choisisser ensuite la langue concernée, par exemple "Français (fr)" puis changer le texte avec ou sans balises au niveau de la chaîne de caractères que vous souhaitez modifier, dans le champs "Description".
 
 ![Image](../main/img/configuration.png?raw=true)

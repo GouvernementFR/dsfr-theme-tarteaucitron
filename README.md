@@ -1,27 +1,76 @@
 ## Implémentation de tarte au citron pour le design system de l'état français
-
+---
 Dans l'attente du composant cookie, nous proposons une version adaptée du gestionnaire tarte au citron.
 
 ## Installation
-
+---
 Se référer à [la documentation officielle de tarteaucitron](https://tarteaucitron.io/fr/)
 
 ## Utilisation
-
+---
 [Tarte au citron sur github](https://github.com/AmauriC/tarteaucitron.js/blob/master/README.md#how-to-use)
 
-## Utilisation du fichier css custom
 
-Afin d'avoir les styles spécifiques au design system, vous devrez utiliser le fichier css du répertoire /css, en version normale ou minifiée. Pour cela, vous devrez changer un des paramètres d'initialisation du plugin tarteaucitron, `useExternalCss`, par défaut à `false` que vous devrez passer à `true`, comme ceci :
+
+## Utilisation du fichier css custom
+---
+Afin d'avoir les styles spécifiques au design system, vous devrez utiliser le fichier css de ce répertoire, en version normale ou minifiée. Pour cela, vous devrez changer un des paramètres d'initialisation du plugin tarteaucitron, `useExternalCss`, par défaut à `false` que vous devrez passer à `true`, comme ceci :
 
 ```
 useExternalCss: true
 ```
-À vous de choisir la manière dont vous voulez procéder pour incorporer le fichier css, vous pouvez le copier/coller dans un fichier pré-existant, ou bien l'appeler tout simplement via la balise <link>
+Vous pouvez désormais utiliser le fichier `tac.custom.css` ou `tac.custom.min.css` en l'incorporant dans la section <head> de votre site :
+```html
+<head>
+    <link rel="stylesheet" href="path/to/tac-custom.css">
+</head
+```
+Vous pouvez également copier/coller le code contenu dans le fichier pour le mettre dans un fichier css pré-existant ou l'importer dans un préprocesseur type sass si vous souhaitez éviter un appel css supplémentaire. À vous de voir !
 
-C'est tout, les autres paramètres sont prévus pour fonctionner dans les cas prévus par le plugin.
+Voilà, c'est tout !
 
-## Pour aller plus loin
+## Exemple de configuration
+Voici notre configuration d'initialisation pour l'exemple :
+```html
+<script type="text/javascript">
+    tarteaucitron.init({
+        /* General */
+        "privacyUrl": "",                /* Privacy policy url . Si vide, le lien Politique de confidencialité du bandeau ne s'affiche pas*/
+        "hashtag": "#consentement",      /* La gestionnaire de consentement s'ouvre avec ce hashtag lorsqu'il est placé dans l'url */
+        "cookieName": "tarteaucitron",   /* L'identifiant du cookie déposé sur le poste utilisateur */
+        "bodyPosition": "top",           /* Position à laquelle le gestionnaire - niveau 2 -  est inséré dans la page (top ou bottom). Pour que les technologies d'assistance puisse y acceder rapidement à la navigation, 'top' est la valeur privilégiée. */
+        "adblocker": false,              /* Show a Warning if an adblocker is detected */
+        "highPrivacy": true,             /* Retire le consentement implicite (au scroll ou à la navigation) Activé par défaut, donc on peut le retirer de cette config */
+        "handleBrowserDNTRequest": false,/* Active ou désactive la prise en compte du Do Not track Navigateur. Si le DNT est activé, aucun cookie n'est déposé */
+        "useExternalCss": true,         /* Active ou non une css custom - désactive ou non la css par défaut */
+        "useExternalJs": true,         /* Active ou non une css custom - désactive ou non la css par défaut */
+
+        /* Niveau 1 : bandeau d'information cookies*/
+        "orientation": "bottom",/* Position de la bannière de niveau 1 (middle - top - bottom). Si la position est middle, il y a un overlay derrière donc laisser à top ou bottom. */
+        "DenyAllCta" : true,    /* Affiche le bouton 'Tout refuser' sur le bandeau de niveau 1 */
+        "AcceptAllCta" : true,  /* Affiche le bouton 'Tout accepter' sur le bandeau de niveau 1 */
+        "closePopup": false,    /* ajoute une croix de fermeture */
+
+        /*Niveau 2: Gestionnaire de cookies*/
+        "removeCredit": true, /* Affiche ou non les credit TAC */
+        "moreInfoLink": true,/*  Affiche ou non le liens vers les infos*/
+        "readmoreLink": true,/* Change the default readmore link pointing to tarteaucitron.io */
+        "mandatory": true,    /* Message à propos des cookies dits fonctionnels  */
+
+
+        /* Sticky d'ouverture niveau 2 */
+        /* Blocs 'Gestion des cookies' */
+        "showAlertSmall": true, /* 'bouton' sticky (en bas a droite) permettant d'ouvrir le gestionnaire de niveau 2*/
+        "cookieslist": true,   /* Ajoute le nombre de services au 'block' sticky */
+        /* Icone sticky */
+        "showIcon": true,             /* affichage du Bouton sticky (icone citron) pour ouvrir le gestionnaire */
+        "iconPosition": "BottomLeft", /* Position du Bouton sticky BottomRight, BottomLeft, TopRight and TopLeft */
+        "groupServices": true
+    });
+</script>
+```
+
+## Modifier les chaînes de caractère (sans back-office)
 Pour des besoins éditoriaux, il est parfois nécessaire de venir changer les chaînes de caractères et/ou de rajouter des balises HTML. Ceci est possible dans les fichiers de traductions présents dans le répertoire /lang du plugin.
 Par exemple, on peut vouloir venir modifier le texte du disclaimer, qui est par défaut :
 
@@ -47,3 +96,10 @@ tarteaucitron.lang = {
     ...
 }
 ```
+## Modifier les chaînes de caractère (avec back-office)
+Dans le back-office de tarteaucitron, vous avez accès aux chaînes de caractères directement dans l'interface.
+Dans l'onglet "Mes Sites", cliquer sur le lien "Modifier le texte" dans la section "Configuration" du tableau. 
+![Image](../blob/main/img/accueil.png?raw=true)
+
+Choisisser ensuite la langue concernée, par exemple "Français (fr)" puis metter le texte avec ou sans balises au niveau de la chaîne de caractères que vous souhaitez modifier, dans le champs "Description".
+![Image](../blob/main/img/configuration.png?raw=true)

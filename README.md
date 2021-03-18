@@ -1,19 +1,19 @@
 ## Implémentation de tarte au citron pour le design system de l'état français
----
+
 Dans l'attente du composant cookie, nous proposons une version adaptée du gestionnaire tarte au citron.
 
 ## Installation
----
+
 Se référer à [la documentation officielle de tarteaucitron](https://tarteaucitron.io/fr/)
 
 ## Utilisation
----
+
 [Tarte au citron sur github](https://github.com/AmauriC/tarteaucitron.js/blob/master/README.md#how-to-use)
 
 
 
 ## Utilisation du fichier css custom
----
+
 Afin d'avoir les styles spécifiques au design system, vous devrez utiliser le fichier css de ce répertoire, en version normale ou minifiée. Pour cela, vous devrez changer un des paramètres d'initialisation du plugin tarteaucitron, `useExternalCss`, par défaut à `false` que vous devrez passer à `true`, comme ceci :
 
 ```
@@ -30,6 +30,7 @@ Vous pouvez également copier/coller le code contenu dans le fichier pour le met
 Voilà, c'est tout !
 
 ## Exemple de configuration
+
 Voici notre configuration d'initialisation pour l'exemple :
 ```html
 <script type="text/javascript">
@@ -71,6 +72,7 @@ Voici notre configuration d'initialisation pour l'exemple :
 ```
 
 ## Modifier les chaînes de caractère (sans back-office)
+
 Pour des besoins éditoriaux, il est parfois nécessaire de venir changer les chaînes de caractères et/ou de rajouter des balises HTML. Ceci est possible dans les fichiers de traductions présents dans le répertoire /lang du plugin.
 Par exemple, on peut vouloir venir modifier le texte du disclaimer, qui est par défaut :
 
@@ -97,6 +99,7 @@ tarteaucitron.lang = {
 }
 ```
 ## Modifier les chaînes de caractère (avec back-office)
+
 Dans le back-office de tarteaucitron, vous avez accès aux chaînes de caractères directement dans l'interface.
 Dans l'onglet "Mes Sites", cliquer sur le lien "Modifier le texte" dans la section "Configuration" du tableau. 
 ![Image](../blob/main/img/accueil.png?raw=true)

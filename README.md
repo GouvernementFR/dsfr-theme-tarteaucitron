@@ -1,17 +1,17 @@
 ## Implémentation de tarte au citron pour le design system de l'état français
----
+
 Dans l'attente du composant cookie, nous proposons une version adaptée du gestionnaire tarte au citron.
 
 ## Installation
----
+
 Se référer à [la documentation officielle de tarteaucitron](https://tarteaucitron.io/fr/)
 
 ## Utilisation
----
+
 [Tarte au citron sur github](https://github.com/AmauriC/tarteaucitron.js/blob/master/README.md#how-to-use)
 
 ## Utilisation du fichier css custom
----
+
 Afin d'avoir les styles spécifiques au design system, vous devrez utiliser le fichier css du répertoire /css, en version normale ou minifiée. Pour cela, vous devrez changer un des paramètres d'initialisation du plugin tarteaucitron, `useExternalCss`, par défaut à `false` que vous devrez passer à `true`, comme ceci :
 
 ```

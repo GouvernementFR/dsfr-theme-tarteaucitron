@@ -490,12 +490,12 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 }
 
 /*** Section générale pour gérer tous les services ***/
-.tarteaucitronMainLine {
+#tarteaucitronRoot .tarteaucitronMainLine {
   padding-bottom: 2.5rem;
   box-shadow: inset 0 -1px 0 0 var(--g300);
 }
 
-.tarteaucitronMainLine .tarteaucitronH1 {
+#tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronH1 {
   display: block;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -504,33 +504,33 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
   font-weight: 700;
 }
 
-.tarteaucitronMainLine .tarteaucitronAsk {
+#tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronAsk {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 1.5rem;
 }
 
-.tarteaucitronMainLine .tarteaucitronAsk::before {
+#tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronAsk::before {
   content: none;
 }
 
-.tarteaucitronMainLine .tarteaucitronAsk .tarteaucitronDeny {
+#tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronAsk .tarteaucitronDeny {
   margin-left: 0;
   margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 48em) {
 
-  .tarteaucitronMainLine .tarteaucitronAsk {
+  #tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronAsk {
     flex-direction: row;
     align-items: center;
   }
 
-  .tarteaucitronMainLine .tarteaucitronAsk::before {
+  #tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronAsk::before {
     content: "";
   }
 
-  .tarteaucitronMainLine .tarteaucitronAsk .tarteaucitronDeny {
+  #tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronAsk .tarteaucitronDeny {
     margin-left: 1.5rem;
     margin-top: 0;
   }

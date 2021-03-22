@@ -100,7 +100,8 @@
 }
 
 #tarteaucitronRoot a:focus {
-  outline: 2px solid var(--focus);
+  outline: 2px solid;
+  outline-color: var(--focus);
   outline-offset: 2px;
   z-index: var(--focus-z-index); 
 }
@@ -133,7 +134,8 @@
 }
 
 #tarteaucitronRoot button:focus {
-  outline: 2px solid var(--focus);
+  outline: 2px solid;
+  outline-color: var(--focus);
   outline-offset: 2px;
   z-index: var(--focus-z-index);
 }
@@ -1066,12 +1068,12 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
   align-items: center;
 }
 
-#tarteaucitronRoot .tac_activate .tarteaucitronAllow:not(.tarteaucitronCTAButton)::before,
-#tarteaucitronRoot .tac_activate .tarteaucitronAllow:not(.tarteaucitronCTAButton)::after {
+.tac_activate .tarteaucitronAllow:not(.tarteaucitronCTAButton)::before,
+.tac_activate .tarteaucitronAllow:not(.tarteaucitronCTAButton)::after {
   content: none;
 }
 
-#tarteaucitronRoot .tac_activate .tarteaucitronAllow:not(.tarteaucitronCTAButton) {
+.tac_activate .tarteaucitronAllow:not(.tarteaucitronCTAButton) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1085,4 +1087,11 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
   line-height: 1.5rem;
   min-height: 2.5rem;
   margin-top: 1.5rem;
+}
+
+.tac_activate .tarteaucitronAllow:not(.tarteaucitronCTAButton):focus {
+  outline: 2px solid;
+  outline-color: var(--focus);
+  outline-offset: 2px;
+  z-index: var(--focus-z-index); 
 }

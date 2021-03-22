@@ -467,6 +467,7 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
   position: absolute;
   right: 1rem;
   top: 1rem;
+  outline-offset: 0px;
 }
 
 #tarteaucitronRoot #tarteaucitronClosePanel::before {

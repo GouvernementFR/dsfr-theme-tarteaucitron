@@ -423,7 +423,7 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
   left: 0;
   top: 0;
   background: var(--w);
-  height: 3rem;
+  height: calc(3rem + 1px);
   width: 100%;
 }
 

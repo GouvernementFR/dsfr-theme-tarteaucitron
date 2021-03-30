@@ -248,11 +248,24 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
   background: var(--g200);
   box-shadow: inset 0 0 0 1px var(--g400);
   z-index: 2147483645;
+  max-height: 70vh;
+  overflow: scroll;
+  background:
+          linear-gradient(#f0f0f0 33%, rgba(240,240,240, 0)),
+          linear-gradient(rgba(240,240,240, 0), #f0f0f0 66%) 0 100%,
+          radial-gradient(farthest-side at 50% 0, rgba(34,34,34, 0.5), rgba(0,0,0,0)),
+          radial-gradient(farthest-side at 50% 100%, rgba(34,34,34, 0.5), rgba(0,0,0,0)) 0 100%;
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-attachment: local, local, scroll, scroll;
+  background-size: 100% 18px, 100% 18px, 100% 6px, 100% 10px;
 }
+
+
 
 /* Bandeau >= 768px */
 @media screen and (min-width: 48em) {
-  body #tarteaucitronRoot div#tarteaucitronAlertBig {
+   #tarteaucitronRoot #tarteaucitronAlertBig {
     width: 40rem !important;
     bottom: 2.5rem !important;
     left: 2.5rem !important;
@@ -262,26 +275,15 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
     transform: none !important;
     box-shadow: inset 0 0 0 1px var(--g400) !important;
     border-radius: 0 !important;
+     max-height: none;
   }
 }
 
 /*** Texte du bandeau ***/
 #tarteaucitronDisclaimerAlert {
-  display: block;
   margin-bottom: 2rem;
-  padding-right: 1rem;
-  max-height: 12rem;
-  overflow: scroll;
-  background: 
-    linear-gradient(#f0f0f0 33%, rgba(240,240,240, 0)),
-    linear-gradient(rgba(240,240,240, 0), #f0f0f0 66%) 0 100%,
-    radial-gradient(farthest-side at 50% 0, rgba(34,34,34, 0.5), rgba(0,0,0,0)),
-    radial-gradient(farthest-side at 50% 100%, rgba(34,34,34, 0.5), rgba(0,0,0,0)) 0 100%;
-  background-color: #f0f0f0;
-  background-repeat: no-repeat;
-  background-attachment: local, local, scroll, scroll;
-  background-size: 100% 18px, 100% 18px, 100% 6px, 100% 6px;
 }
+
 
 @media screen and (min-width: 48em) {
   #tarteaucitronDisclaimerAlert {

@@ -784,7 +784,7 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 
   .tarteaucitronHidden > ul[style="display: block;"] .tarteaucitronLine:not(:last-child),
   .tarteaucitronHidden > ul:last-child:not([style="display: block;"]) .tarteaucitronLine:not(:last-child) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 
 }

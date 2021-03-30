@@ -51,7 +51,7 @@
                         </ol>
                     </div>
                 </nav>
-                <div class="youtube_player " class="" videoid="HyirpmPL43I" width="100%" height="100%" theme="theme (dark | light)" rel="rel (1 | 0)" controls="controls (1 | 0)" showinfo="showinfo (1 | 0)" autoplay="autoplay (0 | 1)" mute="mute (0 | 1)"></div>
+                <div class="youtube_players" videoid="x808c86" width="960" height="540" frameborder="0" title="lecteur vidéo" allowfullscreen="1" lang="fr" style="width: 960px; height: 540px;"></div>
                 <div class="rf-content-media">
                     <div class="rf-responsive-vid">
                         <div class="youtube_player rf-responsive-vid__player" class="" videoid="HyirpmPL43I" width="100%" height="100%" theme="theme (dark | light)" rel="rel (1 | 0)" controls="controls (1 | 0)" showinfo="showinfo (1 | 0)" autoplay="autoplay (0 | 1)" mute="mute (0 | 1)"></div>
@@ -119,42 +119,46 @@
         <script>
 
             // Init TAC
-        tarteaucitron.init({
-        /* General */
-        "groupServices" : true,
-        "privacyUrl": "",                /* Privacy policy url . Si vide, le lien Politique de confidencialité du bandeau ne s'affiche pas*/
-        "hashtag": "#consentement",      /* La gestionnaire de consentement s'ouvre avec ce hashtag lorsqu'il est placé dans l'url */
-        "cookieName": "tarteaucitron",   /* L'identifiant du cookie déposé sur le poste utilisateur */
-        "bodyPosition": "top",           /* Position à laquelle le gestionnaire - niveau 2 -  est inséré dans la page (top ou bottom). Pour que les technologies d'assistance puisse y acceder rapidement à la navigation, 'top' est la valeur privilégiée. */
-        "adblocker": false,              /* Show a Warning if an adblocker is detected */
-        "highPrivacy": true,             /* Retire le consentement implicite (au scroll ou à la navigation) Activé par défaut, donc on peut le retirer de cette config */
-        "handleBrowserDNTRequest": false,/* Active ou désactive la prise en compte du Do Not track Navigateur. Si le DNT est activé, aucun cookie n'est déposé */
-        "useExternalCss": true,         /* Active ou non une css custom - désactive ou non la css par défaut */
+            tarteaucitron.init({
+            /* General */
+            "groupServices" : true,
+            "privacyUrl": "",                /* Privacy policy url . Si vide, le lien Politique de confidencialité du bandeau ne s'affiche pas*/
+            "hashtag": "#consentement",      /* La gestionnaire de consentement s'ouvre avec ce hashtag lorsqu'il est placé dans l'url */
+            "cookieName": "tarteaucitron",   /* L'identifiant du cookie déposé sur le poste utilisateur */
+            "bodyPosition": "top",           /* Position à laquelle le gestionnaire - niveau 2 -  est inséré dans la page (top ou bottom). Pour que les technologies d'assistance puisse y acceder rapidement à la navigation, 'top' est la valeur privilégiée. */
+            "adblocker": false,              /* Show a Warning if an adblocker is detected */
+            "highPrivacy": true,             /* Retire le consentement implicite (au scroll ou à la navigation) Activé par défaut, donc on peut le retirer de cette config */
+            "handleBrowserDNTRequest": false,/* Active ou désactive la prise en compte du Do Not track Navigateur. Si le DNT est activé, aucun cookie n'est déposé */
+            "useExternalCss": true,         /* Active ou non une css custom - désactive ou non la css par défaut */
 
-        /* Niveau 1 : bandeau d'information cookies*/
-        "orientation": "bottom",/* Position de la bannière de niveau 1 (middle - top - bottom). Si la position est middle, il y a un overlay derrière donc laisser à top ou bottom. */
-        "DenyAllCta" : true,    /* Affiche le bouton 'Tout refuser' sur le bandeau de niveau 1 */
-        "AcceptAllCta" : true,  /* Affiche le bouton 'Tout accepter' sur le bandeau de niveau 1 */
-        "closePopup":false,    /* ajoute une croix de fermeture */
+            /* Niveau 1 : bandeau d'information cookies*/
+            "orientation": "bottom",/* Position de la bannière de niveau 1 (middle - top - bottom). Si la position est middle, il y a un overlay derrière donc laisser à top ou bottom. */
+            "DenyAllCta" : true,    /* Affiche le bouton 'Tout refuser' sur le bandeau de niveau 1 */
+            "AcceptAllCta" : true,  /* Affiche le bouton 'Tout accepter' sur le bandeau de niveau 1 */
+            "closePopup":false,    /* ajoute une croix de fermeture */
 
-        /*Niveau 2: Gestionnaire de cookies*/
-        "removeCredit": true, /* Affiche ou non les credit TAC */
-        "moreInfoLink": false,/*  Affiche ou non le liens vers les infos*/
-        "readmoreLink": false,/* Change the default readmore link pointing to tarteaucitron.io */
-        "mandatory": true,    /* Message à propos des cookies dits fonctionnels  */
+            /*Niveau 2: Gestionnaire de cookies*/
+            "removeCredit": true, /* Affiche ou non les credit TAC */
+            "moreInfoLink": false,/*  Affiche ou non le liens vers les infos*/
+            "readmoreLink": false,/* Change the default readmore link pointing to tarteaucitron.io */
+            "mandatory": true,    /* Message à propos des cookies dits fonctionnels  */
 
 
-        /* Sticky d'ouverture niveau 2 */
-        /* Blocs 'Gestion des cookies' */
-        "showAlertSmall": true, /* 'bouton' sticky (en bas a droite) permettant d'ouvrir le gestionnaire de niveau 2*/
-        "cookieslist": true,   /* Ajoute le nombre de services au 'block' sticky */
-        /* Icone sticky */
-        "showIcon": false,             /* affichage du Bouton sticky (icone citron) pour ouvrir le gestionnaire */
-        "iconPosition": "BottomLeft", /* Position du Bouton sticky BottomRight, BottomLeft, TopRight and TopLeft */
-        });
+            /* Sticky d'ouverture niveau 2 */
+            /* Blocs 'Gestion des cookies' */
+            "showAlertSmall": true, /* 'bouton' sticky (en bas a droite) permettant d'ouvrir le gestionnaire de niveau 2*/
+            "cookieslist": true,   /* Ajoute le nombre de services au 'block' sticky */
+            /* Icone sticky */
+            "showIcon": false,             /* affichage du Bouton sticky (icone citron) pour ouvrir le gestionnaire */
+            "iconPosition": "BottomLeft", /* Position du Bouton sticky BottomRight, BottomLeft, TopRight and TopLeft */
+            });
 
-        // Ajout des services
-        (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+            // Ajout des services
+            (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+            (tarteaucitron.job = tarteaucitron.job || []).push('dailymotion');
+            (tarteaucitron.job = tarteaucitron.job || []).push('vimeo');
+            (tarteaucitron.job = tarteaucitron.job || []).push('tagcommander');
+            (tarteaucitron.job = tarteaucitron.job || []).push('tagcommander');
         </script>
 
         <script type="module" src="https://unpkg.com/@gouvfr/dsfr@0.6.0/dist/js/dsfr.module.js"></script>

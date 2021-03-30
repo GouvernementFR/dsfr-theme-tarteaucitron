@@ -10,8 +10,8 @@ tarteaucitron.lang = {
     "alertBigClick": "En poursuivant votre navigation,",
     "alertBig": "vous acceptez l'utilisation de services tiers pouvant installer des cookies",
 
-    "alertBigPrivacy" : "<h4 class=\"rf-h4\">Cookies du site gouvernement.fr</h4>" +
-        "Bienvenue ! Notre site et <a href=\"#consentement\">nos partenaires</a> utilisons des cookies pour améliorer votre expérience et les services disponibles sur ce site. Pour en savoir plus, <a href=\"/donnees-personnelles-et-cookies\" data-smarttag-click=\"%7B%22name%22:%22donnees_personnelles_et_cookies%22,%22level2%22:%228%22,%22chapter1%22:%22consentement_banner%22,%22type%22:%22action%22%7D\" class=\"atClass\">visitez la page Données personnelles et cookies</a>. Vous pouvez, à tout moment, avoir le contrôle sur les cookies que vous souhaitez activer.",
+    "alertBigPrivacy" : "<h5>À propos des cookies sur <a>gouvernement.fr</a></h5>" +
+        "Bienvenue ! Ce site utilise des cookies pour mesurer la fréquentation du site afin d’en améliorer le fonctionnement et l’administration et, avec votre accord, pour évaluer la performance des campagnes d’informations gouvernementales et améliorer votre expérience utilisateur, ainsi que pour vous proposer des services interactifs fournis par nos <a>partenaires</a>.\n",
 
     "alertSmall": "<b>Gestion des services</b>",
     "acceptAll": "Tout accepter",

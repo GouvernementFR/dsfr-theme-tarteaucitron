@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr" data-rf-reset>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://unpkg.com/@gouvfr/dsfr@0.6.0/dist/css/dsfr.min.css">
+        <link rel="stylesheet" href="..//css/dsfr-theme-tac.css">
+        <title>Test CMP - Design System</title>
+    </head>
+    <body>
+    <header role="banner" class="rf-header">
+        <div class="rf-container">
+            <div class="rf-header__body">
+                <div class="rf-header__brand rf-enlarge-link">
+                    <div class="rf-header__logo">
+                        <p class="rf-logo" href="#" title="Ministère de la cohésion des territoires et des relations avec les collectivités territoriales">
+                            Ministère<br> xx xx xxxxxxx<br>
+                            xxx xxxxxxxx<br> xx xxx xxxxxxxxx<br>
+                            xxxx xxx xxxxxxxxxxxxxx <br>
+                            xxxxxxxxxxxxx
+                        </p>
+                    </div>
+                    <div class="rf-header__service">
+                        <a href="/" title="Acceuil - DSFR Theme pour Tarteaucitron - Ministère xx xx xxxxxxx xxx xxxxxxxx xx xxx xxxxxxxxx xxxx xxx xxxxxxxxxxxxxx xxxxxxxxxxxxx">
+                            <h6 class="rf-header__service-title">DSFR Theme pour Tarteaucitron</h6>
+                        </a>
+                        <p class="rf-header__service-tagline">Example avec configuration standard</p>
+                    </div>
+                </div>
+                <div class="rf-header__navbar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="rf-container rf-mb-16v">
+        <div class="rf-grid-row rf-grid-row--gutters">
+            <div class="rf-col-md-8 rf-col-offset-2">
+                <nav role="navigation" class="rf-breadcrumb" aria-label="vous êtes ici :">
+                    <button class="rf-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-191">Voir le fil d’Ariane</button>
+                    <div class="rf-collapse" id="breadcrumb-191">
+                        <ol class="rf-breadcrumb__list">
+                            <li>
+                                <a class="rf-breadcrumb__link" href="#">Accueil</a>
+                            </li>
+                            <li>
+                                <a class="rf-breadcrumb__link" href="#">Segment 1</a>
+                            </li>
+                            <li>
+                                <a class="rf-breadcrumb__link" aria-current="page">Page Actuelle</a>
+                            </li>
+                        </ol>
+                    </div>
+                </nav>
+                <div class="rf-content-media">
+                    <div class="rf-responsive-vid">
+                        <div class="youtube_player rf-responsive-vid__player" class="" videoid="HyirpmPL43I" width="100%" height="100%" style="width:100%;height:100%" theme="theme (dark | light)" rel="rel (1 | 0)" controls="controls (1 | 0)" showinfo="showinfo (1 | 0)" autoplay="autoplay (0 | 1)" mute="mute (0 | 1)">
+
+                        </div>
+                    </div>
+                    <div class="rf-content-media__caption">© Légende de la vidéo</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="rf-footer" role="contentinfo" id="footer">
+        <div class="rf-container">
+            <div class="rf-footer__body">
+                <div class="rf-footer__brand rf-enlarge-link">
+                    <a href="/" title="Retour à l’accueil">
+                        <p class="rf-logo" title="république française">
+                            république
+                            <br>française
+                        </p>
+                    </a>
+                </div>
+                <div class="rf-footer__content">
+                    <p class="rf-footer__content-desc">Lorem [...] elit ut.</p>
+                    <ul class="rf-footer__content-list">
+                        <li class="rf-footer__content-item">
+                            <a class="rf-footer__content-link" href="https://legifrance.gouv.fr">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="rf-footer__content-item">
+                            <a class="rf-footer__content-link" href="https://gouvernement.fr">gouvernement.fr</a>
+                        </li>
+                        <li class="rf-footer__content-item">
+                            <a class="rf-footer__content-link" href="https://service-public.fr">service-public.fr</a>
+                        </li>
+                        <li class="rf-footer__content-item">
+                            <a class="rf-footer__content-link" href="https://data.gouv.fr">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rf-footer__bottom">
+                <ul class="rf-footer__bottom-list">
+                    <li class="rf-footer__bottom-item">
+                        <a class="rf-footer__bottom-link" href="#">Plan du site</a>
+                    </li>
+                    <li class="rf-footer__bottom-item">
+                        <a class="rf-footer__bottom-link" href="#">Accessibilité: non/partiellement/totalement conforme</a>
+                    </li>
+                    <li class="rf-footer__bottom-item">
+                        <a class="rf-footer__bottom-link" href="#">Mentions légales</a>
+                    </li>
+                    <li class="rf-footer__bottom-item">
+                        <a class="rf-footer__bottom-link" href="#">Données personnelles</a>
+                    </li>
+                    <li class="rf-footer__bottom-item">
+                        <a class="rf-footer__bottom-link" href="#consentement">Gestion des cookies</a>
+                    </li>
+                </ul>
+                <div class="rf-footer__bottom-copy">
+                    <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="./tarteaucitron/tarteaucitron.js" ></script>
+        <script>
+            // Init TAC
+        tarteaucitron.init({
+        /* General */
+        "groupServices" : true,
+        "privacyUrl": "",                /* Privacy policy url . Si vide, le lien Politique de confidencialité du bandeau ne s'affiche pas*/
+        "hashtag": "#consentement",      /* La gestionnaire de consentement s'ouvre avec ce hashtag lorsqu'il est placé dans l'url */
+        "cookieName": "tarteaucitron",   /* L'identifiant du cookie déposé sur le poste utilisateur */
+        "bodyPosition": "top",           /* Position à laquelle le gestionnaire - niveau 2 -  est inséré dans la page (top ou bottom). Pour que les technologies d'assistance puisse y acceder rapidement à la navigation, 'top' est la valeur privilégiée. */
+        "adblocker": false,              /* Show a Warning if an adblocker is detected */
+        "highPrivacy": true,             /* Retire le consentement implicite (au scroll ou à la navigation) Activé par défaut, donc on peut le retirer de cette config */
+        "handleBrowserDNTRequest": false,/* Active ou désactive la prise en compte du Do Not track Navigateur. Si le DNT est activé, aucun cookie n'est déposé */
+        "useExternalCss": true,         /* Active ou non une css custom - désactive ou non la css par défaut */
+
+        /* Niveau 1 : bandeau d'information cookies*/
+        "orientation": "bottom",/* Position de la bannière de niveau 1 (middle - top - bottom). Si la position est middle, il y a un overlay derrière donc laisser à top ou bottom. */
+        "DenyAllCta" : true,    /* Affiche le bouton 'Tout refuser' sur le bandeau de niveau 1 */
+        "AcceptAllCta" : true,  /* Affiche le bouton 'Tout accepter' sur le bandeau de niveau 1 */
+        "closePopup":false,    /* ajoute une croix de fermeture */
+
+        /*Niveau 2: Gestionnaire de cookies*/
+        "removeCredit": true, /* Affiche ou non les credit TAC */
+        "moreInfoLink": false,/*  Affiche ou non le liens vers les infos*/
+        "readmoreLink": false,/* Change the default readmore link pointing to tarteaucitron.io */
+        "mandatory": true,    /* Message à propos des cookies dits fonctionnels  */
+
+
+        /* Sticky d'ouverture niveau 2 */
+        /* Blocs 'Gestion des cookies' */
+        "showAlertSmall": true, /* 'bouton' sticky (en bas a droite) permettant d'ouvrir le gestionnaire de niveau 2*/
+        "cookieslist": true,   /* Ajoute le nombre de services au 'block' sticky */
+        /* Icone sticky */
+        "showIcon": false,             /* affichage du Bouton sticky (icone citron) pour ouvrir le gestionnaire */
+        "iconPosition": "BottomLeft", /* Position du Bouton sticky BottomRight, BottomLeft, TopRight and TopLeft */
+        });
+        tarteaucitron.lang.alertBigPrivacy = "Nos site et <a>nos partenaires</a> utilisons des cookies déposés sur votre terminal avec votre consentement que vous pouvez retirer à tout moment.\n" +
+            "Certains cookies sont dits fonctionnels et sont strictement necessaires à la bonne fourniture du service. Ils peuvent comprendrent des traceurs de mesure d’audience motorant le bon fonctionnement technique du site.\n" +
+            "Des cookies dits ‘non fonctionnels’ peuvent être déposés, permettant de personnaliser des contenus selon votre navigation, d’afficher de la publicité personnalisée ou non, géolocalisée ou non en se basant sur votre profil et/ou historique de navigation. ";
+        // Ajout des services
+        (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+        </script>
+
+        <script type="module" src="https://unpkg.com/@gouvfr/dsfr@0.6.0/dist/js/dsfr.module.js"></script>
+        <script nomodule src="https://unpkg.com/@gouvfr/dsfr@0.6.0/dist/js/dsfr.nomodule.js"></script>
+    </body>
+</html>
+

@@ -11,7 +11,7 @@ tarteaucitron.lang = {
     "alertBig": "vous acceptez l'utilisation de services tiers pouvant installer des cookies",
 
      "alertBigPrivacy" : "<h4>Gestion des cookies</h4>" +
-        "Nos site et <a>nos partenaires</a> utilisons des cookies déposés sur votre terminal avec votre consentement que vous pouvez retirer à tout moment.\n" +
+        "Nos site et <a href=\"#consentement\">nos partenaires</a> utilisons des cookies déposés sur votre terminal avec votre consentement que vous pouvez retirer à tout moment.\n" +
         "Certains cookies sont dits fonctionnels et sont strictement necessaires à la bonne fourniture du service. Ils peuvent comprendrent des traceurs de mesure d’audience motorant le bon fonctionnement technique du site.\n" +
         "Des cookies dits ‘non fonctionnels’ peuvent être déposés, permettant de personnaliser des contenus selon votre navigation, d’afficher de la publicité personnalisée ou non, géolocalisée ou non en se basant sur votre profil et/ou historique de navigation. ",
 

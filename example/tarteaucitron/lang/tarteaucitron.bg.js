@@ -1,79 +1,83 @@
 /*global tarteaucitron */
 tarteaucitron.lang = {
+
     "middleBarHead": "☝ 🍪",
-    "adblock": "Здравей! Този сайт позволяа включването на бисквитки по избор.",
-    "adblock_call": "Моля изключете вашият adblocker и изберете бисквитките които искате, или спрете всички.",
-    "reload": "Презареди",
-    
-    "alertBigScroll": "Ако продължавате да скролвате,",
-    "alertBigClick": "Ако продължавате да използвате този сайт,",
-    "alertBig": "вив се съгласявате с всички бисквитки от трети лица.",
-    
-    "alertBigPrivacy": "Този сайт използва бисквитки и Ви дава право да изберете записването на определени или всички.",
-    "alertSmall": "Управление на услуги",
-    "personalize": "Ще избирам",
-    "acceptAll": "ОК, приемам всички",
-    "close": "Затвори",
+    "adblock": "Bonjour! Ce site joue la transparence et vous donne le choix des services tiers à activer.",
+    "adblock_call": "Merci de désactiver votre adblocker pour commencer la personnalisation.",
+    "reload": "Recharger la page",
 
-    "privacyUrl": "Политика за поверителност",
-    
-    "all": "Услуги които записват бисквитки на този сайт",
+    "alertBigScroll": "En continuant de défiler,",
+    "alertBigClick": "En poursuivant votre navigation,",
+    "alertBig": "vous acceptez l'utilisation de services tiers pouvant installer des cookies",
 
-    "info": "Зашитава вашата сигурност",
-    "disclaimer": "Позволяването на тези бисквитки от трети лица, Вие приемате те да записват и използват услуги за проследяване нужни за правилното им функциониране.",
-    "allow": "Разшреши",
-    "deny": "Забрани",
-    "noCookie": "Тази услуга не записва бисквитки.",
-    "useCookie": "Тази услуга може да запише",
-    "useCookieCurrent": "Тази услуга е записала",
-    "useNoCookie": "Тази услуга не е записала бисквитки.",
-    "more": "Прочети повече",
-    "source": "Официален сайт",
-    "credit": "Управление на бисквитките от tarteaucitron.js",
+    "alertBigPrivacy" : "<h4 class=\"rf-h4\">Cookies du site gouvernement.fr</h4>" +
+        "Bienvenue ! Notre site et <a href=\"#consentement\">nos partenaires</a> utilisons des cookies pour améliorer votre expérience et les services disponibles sur ce site. Pour en savoir plus, <a href=\"/donnees-personnelles-et-cookies\" data-smarttag-click=\"%7B%22name%22:%22donnees_personnelles_et_cookies%22,%22level2%22:%228%22,%22chapter1%22:%22consentement_banner%22,%22type%22:%22action%22%7D\" class=\"atClass\">visitez la page Données personnelles et cookies</a>. Vous pouvez, à tout moment, avoir le contrôle sur les cookies que vous souhaitez activer.",
 
-    "toggleInfoBox": "Покажи/скрий информация за записването на бисквитки",
-    "title": "Управление на бисквитките",
-    "cookieDetail": "Информация за",
-    "ourSite": "в нашият сайт",
-    "newWindow": "(нов прозорец)",
-    "allowAll": "Разреши всички",
-    "denyAll": "Забрани всички",
-    
-    "fallback": "е изключен.",
+    "alertSmall": "<b>Gestion des services</b>",
+    "acceptAll": "Tout accepter",
+    "personalize": "Personnaliser",
+    "close": "Fermer",
+
+    "privacyUrl": "Politique de confidentialité",
+
+    "all": "Préférences pour tous les services",
+
+    "info": "Protection de votre vie privée",
+    "disclaimer": "En autorisant ces services tiers, vous acceptez le dépôt et la lecture de cookies et l'utilisation de technologies de suivi nécessaires à leur bon fonctionnement.",
+    "allow": "Autoriser",
+    "deny": "Interdire",
+    "noCookie": "Ce service ne dépose aucun cookie.",
+    "useCookie": "Ce service peut déposer",
+    "useCookieCurrent": "Ce service a déposé",
+    "useNoCookie": "Ce service n'a déposé aucun cookie.",
+    "more": "En savoir plus",
+    "source": "Voir le site officiel",
+    "credit": "Gestion des cookies par tarteaucitron.js",
+    "noServices": "Ce site n'utilise aucun cookie nécessitant votre consentement.",
+
+    "toggleInfoBox": "Afficher/masquer les informations sur le stockage des cookies",
+    "title": "Panneau de gestion des cookies",
+    "cookieDetail": "Détail des cookies",
+    "ourSite": "sur notre site",
+    "newWindow": "(nouvelle fenêtre)",
+    "allowAll": "Tout accepter",
+    "denyAll": "Tout refuser",
+
+    "fallback": "est désactivé.",
 
     "ads": {
-        "title": "Рекламодатели",
-        "details": "Ad networks can generate revenue by selling advertising space on the site."
+        "title": "Régies publicitaires",
+        "details": "Les régies publicitaires permettent de générer des revenus en commercialisant les espaces publicitaires du site."
     },
     "analytic": {
-        "title": "Аналитични",
-        "details": "The audience measurement services used to generate useful statistics attendance to improve the site."
+        "title": "Mesure d'audience",
+        "details": "Les services de mesure d'audience permettent de générer des statistiques de fréquentation utiles à l'amélioration du site."
     },
     "social": {
-        "title": "Социални",
-        "details": "Social networks can improve the usability of the site and help to promote it via the shares."
+        "title": "Réseaux sociaux",
+        "details": "Les réseaux sociaux permettent d'améliorer la convivialité du site et aident à sa promotion via les partages."
     },
     "video": {
-        "title": "Видео платформи",
-        "details": "Video sharing services help to add rich media on the site and increase its visibility."
+        "title": "Vidéos",
+        "details": "Les services de partage de vidéo permettent d'enrichir le site de contenu multimédia et augmentent sa visibilité."
     },
     "comment": {
-        "title": "Коментари",
-        "details": "Comments managers facilitate the filing of comments and fight against spam."
+        "title": "Commentaires",
+        "details": "Les gestionnaires de commentaires facilitent le dépôt de vos commentaires et luttent contre le spam."
     },
     "support": {
-        "title": "Поддръжка",
-        "details": "Support services allow you to get in touch with the site team and help to improve it."
+        "title": "Support",
+        "details": "Les services de support vous permettent d'entrer en contact avec l'équipe du site et d'aider à son amélioration."
     },
     "api": {
-        "title": "Функционални",
-        "details": "APIs are used to load scripts: geolocation, search engines, translations, ..."
+        "title": "APIs",
+        "details": "Les APIs permettent de charger des scripts : géolocalisation, moteurs de recherche, traductions, ..."
     },
     "other": {
-        "title": "Други",
-        "details": "Services to display web content."
+        "title": "Autre",
+        "details": "Services visant à afficher du contenu web."
     },
-    
-    "mandatoryTitle": "Mandatory cookies",
-    "mandatoryText": "This site uses cookies necessary for its proper functioning which cannot be deactivated."
+
+    "mandatoryTitle": "Cookies obligatoires",
+    "mandatoryText": "Ce site utilise des cookies nécessaires à son bon fonctionnement qui ne peuvent pas être désactivés."
 };

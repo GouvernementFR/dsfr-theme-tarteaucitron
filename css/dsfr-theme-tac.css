@@ -587,15 +587,13 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 /*** Container des boutons Accepter/Refuser ***/
 .tarteaucitronAsk {
   display: flex;
-  margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 48em) {
-
   .tarteaucitronAsk {
     justify-content: flex-end;
     align-items: center;
-    margin-top: 0;
+    margin-top: 0!important;
   }
 
   .tarteaucitronLine:not(.tarteaucitronMainLine) .tarteaucitronAsk {
@@ -702,6 +700,17 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 
 #tarteaucitronRoot #tarteaucitronServices_mandatory .tarteaucitronAsk::before {
   content: none;
+}
+
+
+#tarteaucitronRoot [id^=tarteaucitronServices_]{
+  margin-top:1.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  #tarteaucitronRoot [id^=tarteaucitronServices_]{
+    margin-top:0;
+  }
 }
 
 /*** Ajout des bordures dans la liste des services ***/
@@ -818,6 +827,7 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 /*** Bouton pour déplier les sous-services ***/
 #tarteaucitronRoot .tarteaucitron-toggle-group {
   background: none;
+  margin: 1.5rem 0;
   padding: 0;
   border-bottom: var(--is-link) solid 1px currentColor;
   font-size: inherit;

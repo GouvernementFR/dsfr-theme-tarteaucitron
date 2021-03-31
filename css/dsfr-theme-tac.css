@@ -518,7 +518,6 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 #tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronAsk {
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 1.5rem;
 }
 
 #tarteaucitronRoot .tarteaucitronMainLine .tarteaucitronAsk::before {
@@ -589,6 +588,7 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 /*** Container des boutons Accepter/Refuser ***/
 .tarteaucitronAsk {
   display: flex;
+  margin-top:2rem;
 }
 
 @media screen and (min-width: 48em) {
@@ -597,7 +597,6 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
     align-items: center;
     margin-top: 0!important;
   }
-
   .tarteaucitronLine:not(.tarteaucitronMainLine) .tarteaucitronAsk {
     position: absolute;
     top: 0;
@@ -774,9 +773,12 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
   position: relative;
 }
 
+
+.tarteaucitronLine{margin-bottom:1rem!important;}
+
+
 /*** Surcharge dans le cas des sous-services groupés ***/
-.tarteaucitronHidden > ul[style="display: block;"] .tarteaucitronLine:not(:last-child),
-.tarteaucitronHidden > ul:last-child:not([style="display: block;"]) .tarteaucitronLine:not(:last-child) {
+ul[style="display: block;"] .tarteaucitronLine{
   margin-bottom: 1.5rem;
 }
 
@@ -807,12 +809,11 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 
 }
 
-.tarteaucitronHidden > ul[style="display: block;"] .tarteaucitronAsk {
-  margin-top: 0;
-}
+
 
 @media screen and (min-width: 48em) {
   .tarteaucitronHidden > ul[style="display: block;"] .tarteaucitronAsk {
+    margin-top: 0;
     margin-right: 0;
     margin-left: auto;
   }
@@ -829,7 +830,7 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 /*** Bouton pour déplier les sous-services ***/
 #tarteaucitronRoot .tarteaucitron-toggle-group {
   background: none;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 0;
   padding: 0;
   border-bottom: var(--is-link) solid 1px currentColor;
   font-size: inherit;

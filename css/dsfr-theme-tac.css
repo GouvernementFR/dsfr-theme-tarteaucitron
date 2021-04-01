@@ -249,7 +249,7 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
   box-shadow: inset 0 0 0 1px var(--g400);
   z-index: 2147483645;
   max-height: 73vh;
-  overflow: scroll;
+  overflow-y: scroll;
   background:
           linear-gradient(#f0f0f0 33%, rgba(240,240,240, 0)),
           linear-gradient(rgba(240,240,240, 0), #f0f0f0 66%) 0 100%,
@@ -275,7 +275,6 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
     transform: none !important;
     box-shadow: inset 0 0 0 1px var(--g400) !important;
     border-radius: 0 !important;
-     max-height: none;
   }
 }
 
@@ -286,7 +285,7 @@ body #tarteaucitronRoot div#tarteaucitronAlertBig {
 
 
 @media screen and (min-width: 48em) {
-  #tarteaucitronDisclaimerAlert {
+  #tarteaucitronAlertBig {
     max-height: initial;
     height: auto;
     padding-right: 0;

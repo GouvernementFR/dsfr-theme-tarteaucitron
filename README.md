@@ -61,12 +61,12 @@ Voici notre configuration d'initialisation pour l'exemple :
 
         /* Sticky d'ouverture niveau 2 */
         /* Blocs 'Gestion des cookies' */
-        "showAlertSmall": true, /* 'bouton' sticky (en bas a droite) permettant d'ouvrir le gestionnaire de niveau 2*/
-        "cookieslist": true,   /* Ajoute le nombre de services au 'block' sticky */
+        "showAlertSmall": false, /* 'bouton' sticky (en bas a droite) permettant d'ouvrir le gestionnaire de niveau 2*/
+        "cookieslist": false,   /* Ajoute le nombre de services au 'block' sticky */
         /* Icone sticky */
-        "showIcon": true,             /* affichage du Bouton sticky (icone citron) pour ouvrir le gestionnaire */
+        "showIcon": false,             /* affichage du Bouton sticky (icone citron) pour ouvrir le gestionnaire */
         "iconPosition": "BottomLeft", /* Position du Bouton sticky BottomRight, BottomLeft, TopRight and TopLeft */
-        "groupServices": true
+        "groupServices": false
     });
 </script>
 ```

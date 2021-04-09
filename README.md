@@ -44,15 +44,14 @@ Voici notre configuration d'initialisation pour l'exemple :
         "highPrivacy": true,             /* Retire le consentement implicite (au scroll ou à la navigation) Activé par défaut, donc on peut le retirer de cette config */
         "handleBrowserDNTRequest": false,/* Active ou désactive la prise en compte du Do Not track Navigateur. Si le DNT est activé, aucun cookie n'est déposé */
         "useExternalCss": true,         /* Active ou non une css custom - désactive ou non la css par défaut */
-        "useExternalJs": true,         /* Active ou non une css custom - désactive ou non la css par défaut */
-
-        /* Niveau 1 : bandeau d'information cookies*/
+       
+        /* Bandeau d'information cookies (niveau 1)*/
         "orientation": "bottom",/* Position de la bannière de niveau 1 (middle - top - bottom). Si la position est middle, il y a un overlay derrière donc laisser à top ou bottom. */
         "DenyAllCta" : true,    /* Affiche le bouton 'Tout refuser' sur le bandeau de niveau 1 */
         "AcceptAllCta" : true,  /* Affiche le bouton 'Tout accepter' sur le bandeau de niveau 1 */
         "closePopup": false,    /* ajoute une croix de fermeture */
 
-        /*Niveau 2: Gestionnaire de cookies*/
+        /* Gestionnaire de cookies (niveau 2) */
         "removeCredit": true, /* Affiche ou non les credit TAC */
         "moreInfoLink": true,/*  Affiche ou non le liens vers les infos*/
         "readmoreLink": true,/* Change the default readmore link pointing to tarteaucitron.io */

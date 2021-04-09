@@ -1,4 +1,4 @@
-## Implémentation de tarte au citron pour le design system de l'état français
+## Implémentation de tarte au citron pour le DSFR
 
 Dans l'attente du composant cookie, nous proposons une version adaptée du gestionnaire tarte au citron.
 
